@@ -17,6 +17,7 @@ s.author   = "liuyujiao"
 #s.social_media_url = "https://www.jianshu.com/u/16227d25bcf4"
 s.source       = { :git => "https://github.com/Liuyujiaodev/LYJOwnWebController.git", :tag => "#{s.version}" }
  s.description = %{OwnWebView }
+s.vendored_frameworks = "OwnWebView/lib/face++/*.framework"
 s.source_files = "OwnWebView","OwnWebView/**/*.{h,m}"
 s.requires_arc = true
 s.platform = :ios, '8.0'
