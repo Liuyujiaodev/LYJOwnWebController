@@ -9,4 +9,4 @@ target :OwnWebViewDemo do
     pod 'SVGKit', :git => 'https://github.com/SVGKit/SVGKit.git', :branch => '2.0.0'
     pod 'UMengAnalytics-NO-IDFA'
 
-end
+endpod spec lint --allow-warnings
