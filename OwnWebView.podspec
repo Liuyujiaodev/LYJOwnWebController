@@ -17,10 +17,12 @@ s.author   = "liuyujiao"
 #s.social_media_url = "https://www.jianshu.com/u/16227d25bcf4"
 s.source       = { :git => "https://github.com/Liuyujiaodev/LYJOwnWebController.git", :tag => "#{s.version}" }
  s.description = %{OwnWebView }
-s.vendored_frameworks = "OwnWebView/lib/face++/*.framework"
+s.vendored_frameworks = "OwnWebView/MGFaceIDBaseKit.framework","OwnWebViewMGFaceIDLiveDetect.framework"
+s.vendored_libraries = 'libshujumoheSDK.a'
 s.source_files = "OwnWebView","OwnWebView/**/*.{h,m}"
+s.frameworks = "WebKit","CoreMedia","CoreMotion","Social"
 s.requires_arc = true
-s.platform = :ios, '8.0'
+s.platform = :ios, '9.0'
 s.dependency "YJUtil"
 s.dependency "AFNetworking"
 s.dependency "BMKLocationKit"
@@ -28,4 +30,6 @@ s.dependency "UtilStr"
 s.dependency "YJCategory"
 s.dependency "SVGKit"
 s.dependency "UMengAnalytics-NO-IDFA"
+s.resource = "OwnWebView/lib/libshujumohe/*.bundle"
+s.resource = "OwnWebView/lib/face++/*.bundle"
 end
